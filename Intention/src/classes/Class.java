@@ -9,6 +9,7 @@ public class Class {
 	
 	//Class Objects
 	Scanner scan = new Scanner(System.in);
+	Random rand = new Random();
 	
 	public Class(String voc, String nam, int hp, int man, int attkDmg, int def, int lvl, int exp){
 		vocation = voc;
