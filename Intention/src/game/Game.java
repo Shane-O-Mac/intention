@@ -20,7 +20,15 @@ public class Game {
 		classArray[0] = Warrior.getWarrior();
 		classArray[1] = Paladin.getPaladin();
 		classArray[2] = Wizard.getWizard();
+		
+		
 		Class[] currentTeam = new Class[3];
+		//For Testing*****************************************
+		currentTeam[0] = Warrior.getWarrior();
+		currentTeam[1] = Paladin.getPaladin();
+		currentTeam[2] = Wizard.getWizard();
+		//****************************************************
+		
 		/*currentTeam = Story.chooseClasses(classArray);
 		System.out.println("Your current party consists of");
 		for(int i = 0; i < currentTeam.length; i++){

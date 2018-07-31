@@ -9,6 +9,7 @@ public class Monster {
 	static Random rand = new Random();
 	static Scanner scan = new Scanner(System.in);
 	String name;
+	static String input;
 	int health, attackDamage, defense, dodge, difficulty;
 	public Monster(String nam, int hp, int attkDmg, int def, int dodg, int diff){
 		name = nam;
@@ -93,9 +94,11 @@ public class Monster {
 	public static void battle(Class[] currentTeam, Monster enemy){
 		Class[] party = currentTeam;
 		boolean fighting = true;
+		Class currentFighter;
 		while(fighting){
-			Class currentFighter = party[rand.nextInt(3)];
-			System.out.println("The " + currentFighter.getVocation());
+			currentFighter = party[rand.nextInt(3)];			
+			System.out.println("The " + currentFighter.getVocation() + " spots a(n) " + enemy.getName() + "!");
+			input = scan.nextLine();
 			//System.out.println(currentFighter);
 		}//End fighting loop
 	}

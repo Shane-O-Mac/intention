@@ -108,7 +108,8 @@ public class Story {
 				}
 				input = scan.nextInt();
 				Monster enemy = (Monster) newList.get(input-1);
-				System.out.println("Current Enemy: " + enemy.getName());
+				//System.out.println("Current Enemy: " + enemy.getName());
+				
 				Monster.battle(currentTeam, enemy);
 			}//End else if Option[2]
 			else if(choice.equals(option[3])){
